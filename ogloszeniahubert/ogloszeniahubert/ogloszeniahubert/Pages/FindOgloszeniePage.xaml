@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ogloszeniahubert.Pages.FindOgloszeniePage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" Margin="40,0,40,0">
+            <Picker Title="Wybierz kategorie" TextColor="#5863f8" x:Name="PickerKategoria">
+                <Picker.Items>
+                    <x:String>Dom</x:String>
+                    <x:String>Fitness</x:String>
+                    <x:String>Elektronika</x:String>
+                    <x:String>Rozrywka</x:String>
+                    <x:String>Moda</x:String>
+                </Picker.Items>
+            </Picker>
+            <Picker Title="Wybierz Wojewodztwo" TextColor="#5863f8" x:Name="PickerWojewodztwo">
+                <Picker.Items>
+                    <x:String>Pomorskie</x:String>
+                    <x:String>Wielkopolskie</x:String>
+                    <x:String>Mazowieckie</x:String>
+                    <x:String>Slaskie</x:String>
+                    <x:String>Podkarpackie</x:String>
+                </Picker.Items>
+            </Picker>
+            <Button BackgroundColor="#5863f8" Text="Szukaj" TextColor="White" x:Name="BtnSearch" Clicked="BtnSearch_OnClicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

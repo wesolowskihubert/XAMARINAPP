@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ogloszeniahubert.Pages.HelpPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label TextColor="#A5A7AB" Margin="10,40,10,0" FontSize="Medium" Text="Aplikacja ogłoszonka osiedlowe to...lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc auctor a ex eu volutpat. Pellentesque molestie scelerisque ligula, quis semper leo tempus at. Pellentesque gravida mi vitae  massa pellentesque, at pretium sem varius. Nam faucibus, sem quis mollis porta, turpis ante tincidunt dui, et eleifend libero odio quis "/>
+            <Label HorizontalTextAlignment="Center" TextColor="#A5A7AB" Margin="10,40,10,0" FontSize="Medium" Text="Jeśli potrzebujesz pomocy konsultanta, wyślij SMS o treści 'POMOC Z APLIKACJA' pod numer: +48 123 456 789 a nasz konsultant skontaktuje sie z tobą w ciągu 24h"></Label>
+            <Image Source="support.png" Margin="0,50,0,0" HeightRequest="80" WidthRequest="80"></Image>
+            <Image Source="sms.png" Margin="0,40,0,0" HorizontalOptions="Center">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer x:Name="TapSMS" NumberOfTapsRequired="1" Tapped="TapSMS_OnTapped"></TapGestureRecognizer>
+                </Image.GestureRecognizers>
+            </Image>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "BV3zqa+aBZZD5vJAcvEMu0gFQzXZ3KI2KgzaLJcjKdS1tvqpDzFIIdiNEdMv4dmespZUZeA6zzSPXNXDKO6qdQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Hubertto\\source\\repos\\OgloszeniaHubert\\ogloszeniahubert\\ogloszeniahubert\\ogloszeniahubert.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Hubertto\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Hubertto\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Hubertto\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Hubertto\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Hubertto\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Hubertto\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
+    "C:\\Users\\Hubertto\\.nuget\\packages\\xam.plugins.messaging\\5.1.0\\xam.plugins.messaging.5.1.0.nupkg.sha512",
+    "C:\\Users\\Hubertto\\.nuget\\packages\\xam.plugins.settings\\3.1.1\\xam.plugins.settings.3.1.1.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}

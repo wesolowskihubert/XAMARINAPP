@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ogloszeniahubert.Pages.SignUpPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Image Source="ogloszenialogo.png" Margin="0,30,0,0" HeightRequest="200" WidthRequest="200" Grid.Row="0"></Image>
+            <StackLayout Grid.Row="1" Margin="40,20,40,0">
+                <Entry Placeholder="Email" x:Name="EntEmail"></Entry>
+                <Entry Placeholder="Hasło" x:Name="EntPassword" IsPassword="True"></Entry>
+                <Entry Placeholder="Powtórz hasło" x:Name="EntConfirmPassword" IsPassword="True"></Entry>
+                <Button Text="Zarejestruj" BackgroundColor="#5863f8" TextColor="White" x:Name="BtnSignUp" Clicked="BtnSignUp_Clicked">
+                </Button>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ogloszeniahubert.Pages.OgloszenieProfilePage">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <BoxView BackgroundColor="#5863f8" AbsoluteLayout.LayoutBounds="0,0,1,0.3" AbsoluteLayout.LayoutFlags="All"></BoxView>
+            <Image x:Name="ImgOgloszenie" Margin="0,0,0,30" AbsoluteLayout.LayoutBounds="0.5,0.2,0.3,0.3" AbsoluteLayout.LayoutFlags="All"></Image>
+            <Label x:Name="LblProfileName" FontSize="Medium" HorizontalTextAlignment="Center"  AbsoluteLayout.LayoutBounds="0.5,0.5,0.3,0.2" AbsoluteLayout.LayoutFlags="All"></Label>
+            <StackLayout Background="#F5F5F5" Padding="8,2,0,0" AbsoluteLayout.LayoutBounds="0,0.6,1,0.1" AbsoluteLayout.LayoutFlags="All">
+                <Label Text="Ogloszenie" TextColor="#707070"></Label>
+                <Label x:Name="LblKategoria" TextColor="Black"></Label>
+            </StackLayout>
+            <StackLayout Background="#F5F5F5" Padding="8,2,0,0" AbsoluteLayout.LayoutBounds="0,0.75,1,0.1" AbsoluteLayout.LayoutFlags="All">
+                <Label Text="Wojewodztwo" TextColor="#707070"></Label>
+                <Label x:Name="LblWojewodztwo" TextColor="Black"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Background="#F5F5F5" Padding="8,2,0,0" AbsoluteLayout.LayoutBounds="0,0.9,1,0.1" AbsoluteLayout.LayoutFlags="All">
+                <Image Source="call.png" HorizontalOptions="Center">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="TapPhone" NumberOfTapsRequired="1" Tapped="TapPhone_OnTapped"></TapGestureRecognizer>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Source="mapa.png" Margin="0,0,0,0"  HorizontalOptions="EndAndExpand">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="TapMapa" NumberOfTapsRequired="1" Tapped="TapMapa_OnTapped"></TapGestureRecognizer>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image Source="email.png" Margin="0,0,10,0"  HorizontalOptions="EndAndExpand">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="TapEmails" NumberOfTapsRequired="1" Tapped="TapEmails_OnTapped"></TapGestureRecognizer>
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

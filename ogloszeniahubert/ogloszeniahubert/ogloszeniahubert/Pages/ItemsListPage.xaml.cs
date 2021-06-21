@@ -1,0 +1,51 @@
+﻿using ogloszeniahubert.Models;
+using ogloszeniahubert.Services;
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace ogloszeniahubert.Pages
+{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class ItemsListPage : ContentPage
+    {
+        public ObservableCollection<OgloszeniaUser> OgloszeniaUsers;
+        private string _wojewodztwo;
+        private string _kategoria;
+
+        public ItemsListPage(string kategoria, string wojewodztwo)
+        {
+            InitializeComponent();
+            OgloszeniaUsers = new ObservableCollection<OgloszeniaUser>();
+            _wojewodztwo = wojewodztwo;
+            _kategoria = kategoria;
+            FindItems();
+        }
+
+        private async void FindItems()
+        {
+            ApiServices apiServices = new ApiServices();
+            var items = await apiServices.FindItem(_kategoria, _wojewodztwo);
+            foreach(var wojewodztwo in items.ToList())
+            {
+                OgloszeniaUsers.Add(wojewodztwo);
+            }
+            LvItems.ItemsSource = OgloszeniaUsers;
+        }
+
+        private void LvItems_OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var selectedOgloszenie = e.SelectedItem as OgloszeniaUser;
+            if (selectedOgloszenie != null) {
+                Navigation.PushAsync(new OgloszenieProfilePage(selectedOgloszenie));
+            }
+            ((ListView)sender).SelectedItem = null;
+        }
+    }
+}

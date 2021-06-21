@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ogloszeniahubert.Pages.AddOgloszeniePage">
+    <ContentPage.Content>
+        <StackLayout Margin="40">
+            <Label Text="Dodaj swoje ogłoszenie" TextColor="Black" HorizontalTextAlignment="Center" FontSize="Medium" Margin="0,0,0,40"></Label>
+            <Entry Placeholder="Imie" TextColor="#a5a7ab" x:Name="EntName"></Entry>
+            <Entry Placeholder="Email" TextColor="#a5a7ab" x:Name="EntEmail"></Entry>
+            <Entry Placeholder="Telefon" TextColor="#a5a7ab" x:Name="EntPhone"></Entry>
+            <Entry Placeholder="Przedmiot" TextColor="#a5a7ab" x:Name="EntItem"></Entry>
+            <Picker Title="Kategoria" TextColor="#a5a7ab" x:Name="PickerKategoria">
+                <Picker.Items>
+                    <x:String>Dom</x:String>
+                    <x:String>Fitness</x:String>
+                    <x:String>Elektronika</x:String>
+                    <x:String>Rozrywka</x:String>
+                    <x:String>Moda</x:String>
+                </Picker.Items>
+            </Picker>
+            <Picker Title="Wojewodztwo" TextColor="#a5a7ab" x:Name="PickerWojewodztwo">
+                <Picker.Items>
+                    <x:String>Pomorskie</x:String>
+                    <x:String>Wielkopolskie</x:String>
+                    <x:String>Mazowieckie</x:String>
+                    <x:String>Slaskie</x:String>
+                    <x:String>Podkarpackie</x:String>
+                </Picker.Items>
+            </Picker>
+            <StackLayout HorizontalOptions="End" Orientation="Horizontal" Spacing="20">
+                <Image x:Name="ImgOgloszenie" HeightRequest="80" WidthRequest="80"></Image>
+                <Image Source="camera.png">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer x:Name="TapOpenCamera" NumberOfTapsRequired="1"  Tapped="TapOpenCamera_OnTapped"></TapGestureRecognizer>
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+            <Button Text="Dodaj" BackgroundColor="#5863f8" TextColor="White" x:Name="BntSubmit" Clicked="BntSubmit_OnClicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
